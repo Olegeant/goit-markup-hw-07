@@ -19,35 +19,42 @@
   </head>
 
   <body>
-    <!-- Шапка -->
+    <!-- Header -->
     <header class="site-header">
-      <div class="container">
+      <div class="site-header__container container">
         <nav class="site-nav">
           <a href="./index.html" class="logo"
-            ><span class="logo-start">Web</span>Studio</a
+            ><span class="logo__start-text">Web</span
+            ><span class="logo__end-text">Studio</span></a
           >
-          <ul class="nav-list list">
-            <li class="item">
-              <a href="./index.html" class="nav-link">Студия</a>
+          <ul class="site-nav__list list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link link">Студия</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="nav-link current">Портфолио</a>
+            <li class="site-nav__item">
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link--current link"
+                >Портфолио</a
+              >
             </li>
-            <li class="item"><a href="#" class="nav-link">Контакты</a></li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link link">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="header-contact list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="contact-link email">
-              <svg class="link-icon" width="16" height="12">
+        <ul class="contact-list list">
+          <li class="contact-list__item">
+            <a href="mailto:info@devstudio.com" class="contact-list__link link">
+              <svg class="contact-list__icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               <span>info@devstudio.com</span>
             </a>
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="contact-link phone">
-              <svg class="link-icon" width="10" height="16">
+          <li class="contact-list__item">
+            <a href="tel:+380961111111" class="contact-list__link link">
+              <svg class="contact-list__icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               <span>+38 096 111 11 11</span>
@@ -61,39 +68,42 @@
       <!-- Секция Наши работы -->
       <section class="section works">
         <div class="container">
-          <h1 class="section-title visually-hidden">Наши работы</h1>
-          <ul class="filter-container list">
-            <li class="item">
-              <button class="filter-button btn-active" type="button">
+          <h1 class="works_section-title visually-hidden">Наши работы</h1>
+          <ul class="filter list">
+            <li class="filter__item">
+              <button
+                class="portfolio-button portfolio-button--active"
+                type="button"
+              >
                 Все
               </button>
             </li>
-            <li class="item">
-              <button class="filter-button" type="button">Веб-сайты</button>
+            <li class="filter__item">
+              <button class="portfolio-button" type="button">Веб-сайты</button>
             </li>
-            <li class="item">
-              <button class="filter-button" type="button">Приложения</button>
+            <li class="filter__item">
+              <button class="portfolio-button" type="button">Приложения</button>
             </li>
-            <li class="item">
-              <button class="filter-button" type="button">Дизайн</button>
+            <li class="filter__item">
+              <button class="portfolio-button" type="button">Дизайн</button>
             </li>
-            <li class="item">
-              <button class="filter-button" type="button">Маркетинг</button>
+            <li class="filter__item">
+              <button class="portfolio-button" type="button">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="works-samples list">
-            <li class="item">
-              <a href="#" class="work-link">
-                <div class="works-thumb">
+          <ul class="work-samples list">
+            <li class="work-samples__item">
+              <a href="#" class="sample link">
+                <div class="sample__thumb">
                   <img
-                    class="photo"
+                    class="sample__photo photo"
                     src="./images/img-portfolio-technocrack.jpg"
                     alt="Макбук с открытой веб-страницей"
                     width="370"
                   />
-                  <div class="works-overlay">
-                    <p class="work-details">
+                  <div class="sample__overlay">
+                    <p class="sample__details">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
                       цифрового шпионажа и атак на защищённые сервера
@@ -101,201 +111,201 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-meta">
-                  <h2 class="work-name">Технокряк</h2>
-                  <p class="work-category">Веб-сайт</p>
+                <div class="sample__meta">
+                  <h2 class="sample__name">Технокряк</h2>
+                  <p class="sample__category">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="work-link">
-                <div class="works-thumb">
+            <li class="work-samples__item">
+              <a href="#" class="sample link">
+                <div class="sample__thumb">
                   <img
-                    class="photo"
+                    class="sample__photo photo"
                     src="./images/img-portfolio-basketball.jpg"
                     alt="Два бескетболиста в борьбе за мяч"
                     width="370"
                   />
 
-                  <div class="works-overlay">
-                    <p class="work-details">
+                  <div class="sample__overlay">
+                    <p class="sample__details">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Laborum natus corporis sapiente maiores at adipisci, quia
                       expedita possimus officiis.
                     </p>
                   </div>
                 </div>
-                <div class="work-meta">
-                  <h2 class="work-name">Постер New Orlean vs Golden Star</h2>
-                  <p class="work-category">Дизайн</p>
+                <div class="sample__meta">
+                  <h2 class="sample__name">Постер New Orlean vs Golden Star</h2>
+                  <p class="sample__category">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="work-link">
-                <div class="works-thumb">
+            <li class="work-samples__item">
+              <a href="#" class="sample link">
+                <div class="sample__thumb">
                   <img
-                    class="photo"
+                    class="sample__photo photo"
                     src="./images/img-portfolio-seafood.jpg"
                     alt="Логотип - название ресторана на фоне рыбы"
                     width="370"
                   />
 
-                  <div class="works-overlay">
-                    <p class="work-details">
+                  <div class="sample__overlay">
+                    <p class="sample__details">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Laborum natus corporis sapiente maiores at adipisci, quia
                       expedita possimus officiis.
                     </p>
                   </div>
                 </div>
-                <div class="work-meta">
-                  <h2 class="work-name">Ресторан Seafood</h2>
-                  <p class="work-category">Приложение</p>
+                <div class="sample__meta">
+                  <h2 class="sample__name">Ресторан Seafood</h2>
+                  <p class="sample__category">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="work-link">
-                <div class="works-thumb">
+            <li class="work-samples__item">
+              <a href="#" class="sample link">
+                <div class="sample__thumb">
                   <img
-                    class="photo"
+                    class="sample__photo photo"
                     src="./images/img-portfolio-prime.jpg"
                     alt="Черные наушники на пустом фоне"
                     width="370"
                   />
 
-                  <div class="works-overlay">
-                    <p class="work-details">
+                  <div class="sample__overlay">
+                    <p class="sample__details">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Laborum natus corporis sapiente maiores at adipisci, quia
                       expedita possimus officiis.
                     </p>
                   </div>
                 </div>
-                <div class="work-meta">
-                  <h2 class="work-name">Проект Prime</h2>
-                  <p class="work-category">Маркетинг</p>
+                <div class="sample__meta">
+                  <h2 class="sample__name">Проект Prime</h2>
+                  <p class="sample__category">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="work-link">
-                <div class="works-thumb">
+            <li class="work-samples__item">
+              <a href="#" class="sample link">
+                <div class="sample__thumb">
                   <img
-                    class="photo"
+                    class="sample__photo photo"
                     src="./images/img-portfolio-boxes.jpg"
                     alt="Две коробки: белая и бежевая"
                     width="370"
                   />
 
-                  <div class="works-overlay">
-                    <p class="work-details">
+                  <div class="sample__overlay">
+                    <p class="sample__details">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Laborum natus corporis sapiente maiores at adipisci, quia
                       expedita possimus officiis.
                     </p>
                   </div>
                 </div>
-                <div class="work-meta">
-                  <h2 class="work-name">Проект Boxes</h2>
-                  <p class="work-category">Приложение</p>
+                <div class="sample__meta">
+                  <h2 class="sample__name">Проект Boxes</h2>
+                  <p class="sample__category">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="work-link">
-                <div class="works-thumb">
+            <li class="work-samples__item">
+              <a href="#" class="sample link">
+                <div class="sample__thumb">
                   <img
-                    class="photo"
+                    class="sample__photo photo"
                     src="./images/img-portfolio-inspiration.jpg"
                     alt="Монитор с открытой веб-страницей"
                     width="370"
                   />
 
-                  <div class="works-overlay">
-                    <p class="work-details">
+                  <div class="sample__overlay">
+                    <p class="sample__details">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Laborum natus corporis sapiente maiores at adipisci, quia
                       expedita possimus officiis.
                     </p>
                   </div>
                 </div>
-                <div class="work-meta">
-                  <h2 class="work-name">Inspiration has no Borders</h2>
-                  <p class="work-category">Веб-сайт</p>
+                <div class="sample__meta">
+                  <h2 class="sample__name">Inspiration has no Borders</h2>
+                  <p class="sample__category">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="work-link">
-                <div class="works-thumb">
+            <li class="work-samples__item">
+              <a href="#" class="sample link">
+                <div class="sample__thumb">
                   <img
-                    class="photo"
+                    class="sample__photo photo"
                     src="./images/img-portfolio-limited.jpg"
                     alt="Раскрытый журнал"
                     width="370"
                   />
 
-                  <div class="works-overlay">
-                    <p class="work-details">
+                  <div class="sample__overlay">
+                    <p class="sample__details">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Laborum natus corporis sapiente maiores at adipisci, quia
                       expedita possimus officiis.
                     </p>
                   </div>
                 </div>
-                <div class="work-meta">
-                  <h2 class="work-name">Издание Limited Edition</h2>
-                  <p class="work-category">Дизайн</p>
+                <div class="sample__meta">
+                  <h2 class="sample__name">Издание Limited Edition</h2>
+                  <p class="sample__category">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="work-link">
-                <div class="works-thumb">
+            <li class="work-samples__item">
+              <a href="#" class="sample link">
+                <div class="sample__thumb">
                   <img
-                    class="photo"
+                    class="sample__photo photo"
                     src="./images/img-portfolio-lab.jpg"
                     alt="Бирка с названием прокета"
                     width="370"
                   />
 
-                  <div class="works-overlay">
-                    <p class="work-details">
+                  <div class="sample__overlay">
+                    <p class="sample__details">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Laborum natus corporis sapiente maiores at adipisci, quia
                       expedita possimus officiis.
                     </p>
                   </div>
                 </div>
-                <div class="work-meta">
-                  <h2 class="work-name">Проект LAB</h2>
-                  <p class="work-category">Маркетинг</p>
+                <div class="sample__meta">
+                  <h2 class="sample__name">Проект LAB</h2>
+                  <p class="sample__category">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="work-link">
-                <div class="works-thumb">
+            <li class="work-samples__item">
+              <a href="#" class="sample link">
+                <div class="sample__thumb">
                   <img
-                    class="photo"
+                    class="sample__photo photo"
                     src="./images/img-portfolio-growing.jpg"
                     alt="Ноутбук с открытой веб-страницей"
                     width="370"
                   />
 
-                  <div class="works-overlay">
-                    <p class="work-details">
+                  <div class="sample__overlay">
+                    <p class="sample__details">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Laborum natus corporis sapiente maiores at adipisci, quia
                       expedita possimus officiis.
                     </p>
                   </div>
                 </div>
-                <div class="work-meta">
-                  <h2 class="work-name">Growing Business</h2>
-                  <p class="work-category">Приложение</p>
+                <div class="sample__meta">
+                  <h2 class="sample__name">Growing Business</h2>
+                  <p class="sample__category">Приложение</p>
                 </div>
               </a>
             </li>
@@ -306,72 +316,77 @@
 
     <!-- Подвал -->
     <footer class="site-footer">
-      <div class="container">
-        <div>
-          <a href="./index.html" class="logo"
-            ><span class="logo-start">Web</span>Studio</a
+      <div class="site-footer__container container">
+        <div class="site-footer__address-block">
+          <a href="./index.html" class="logo site-footer__logo"
+            ><span class="logo__start-text">Web</span
+            ><span class="logo__end-text">Studio</span></a
           >
           <address class="address">
-            <ul class="footer-contact list">
-              <li class="item">г. Киев, пр-т Леси Украинки, 26</li>
-              <li class="item">
-                <a href="mailto:info@example.com" class="link">
+            <ul class="address__list list">
+              <li class="address__item item">
+                г. Киев, пр-т Леси Украинки, 26
+              </li>
+              <li class="address__item item">
+                <a href="mailto:info@example.com" class="address__link link">
                   info@example.com
                 </a>
               </li>
-              <li class="item">
-                <a href="tel:+380991111111" class="link"> +38 099 111 11 11 </a>
+              <li class="address__item item">
+                <a href="tel:+380991111111" class="address__link link">
+                  +38 099 111 11 11
+                </a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="social-container">
-          <p class="join-text">присоединяйтесь</p>
-          <ul class="social-links list">
-            <li class="item">
-              <a href="" class="social-link">
-                <svg class="social-icon" width="20" height="20">
+        <div class="site-footer__social-block">
+          <p class="site-footer__block-title">присоединяйтесь</p>
+          <ul class="social list">
+            <li class="social__item item">
+              <a href="" class="social__link social__link--footer link">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="social-link">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social__item item">
+              <a href="" class="social__link social__link--footer link">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="social-link">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social__item item">
+              <a href="" class="social__link social__link--footer link">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="social-link">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social_item item">
+              <a href="" class="social__link social__link--footer link">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="subscribe-container">
-          <p class="join-text">Подпишитесь на рассылку</p>
-          <form class="subscribe-form">
-            <label class="subscribe-field">
+        <div class="site-footer__subscribe-block">
+          <p class="site-footer__block-title">Подпишитесь на рассылку</p>
+          <form class="subscribe__form">
+            <label class="subscribe__field">
               <input
                 name="email"
                 type="email"
-                class="subscribe-email"
+                class="subscribe__input-email"
                 placeholder="E-mail"
               />
             </label>
-            <button class="main-button subscribe-submit" type="submit">
+            <button class="main-button subscribe__submit-btn" type="submit">
               <span>Подписаться</span>
-              <svg class="subscribe-icon" width="24" height="24">
+              <svg class="subscribe__icon" width="24" height="24">
                 <use href="./images/sprite.svg#icon-subscribe"></use>
               </svg>
             </button>
