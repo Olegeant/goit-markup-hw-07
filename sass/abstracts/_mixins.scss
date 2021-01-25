@@ -17,5 +17,6 @@
       $cubicBezierMain +
       ', ';
   }
+  $transition: str-slice($transition, 1, -2);
   transition: unquote($transition);
 }
