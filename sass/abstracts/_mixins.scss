@@ -1,0 +1,21 @@
+// @use "sass:string";
+
+@mixin centeredFlex($type: flex) {
+  display: $type;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transitionMain($properties...) {
+  $transition: '';
+  @each $property in $properties {
+    $transition: $transition +
+      $property +
+      ' ' +
+      $transitionTime +
+      ' ' +
+      $cubicBezierMain +
+      ', ';
+  }
+  transition: unquote($transition);
+}
