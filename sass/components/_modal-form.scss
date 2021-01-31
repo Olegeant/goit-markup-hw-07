@@ -99,9 +99,9 @@
   }
 }
 
-.modal-form__licence-declaration,
-.modal-form__licence-link {
-  margin-bottom: 0;
+.modal-form__licence-declaration {
+  display: inline-flex;
+  align-items: center;
 
   color: $primaryTextColor;
 
@@ -109,11 +109,6 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-.modal-form__licence-declaration {
-  display: inline-flex;
-  align-items: center;
 
   &::before {
     display: inline-block;
@@ -145,8 +140,8 @@
 }
 
 .modal-form__licence-link {
-  display: inline-block;
   color: $accentColor;
+  text-decoration: underline;
 }
 
 .modal__submit-btn {

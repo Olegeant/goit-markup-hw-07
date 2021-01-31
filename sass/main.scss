@@ -1,6 +1,7 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'vendors/normalize';
+@import 'base/fonts';
 @import 'base/base';
 @import 'base/utilities';
 @import 'layout/header';
@@ -15,7 +16,7 @@
 @import 'components/social';
 @import 'components/logo';
 @import 'components/buttons';
-@import 'components/nav-manu';
+@import 'components/nav-menu';
 @import 'components/contacts';
 @import 'components/address';
 @import 'components/modal-form';
